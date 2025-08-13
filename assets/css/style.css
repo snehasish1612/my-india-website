@@ -633,6 +633,14 @@ footer a {
   border: 2px dashed #138808;
 }
 
+.history-future .container {
+  overflow-x: hidden;
+}
+
+.history-timeline .container {
+  overflow-x: hidden;
+}
+
 /*Travel page */
 /* Introductory Section */
 .travel-intro {
