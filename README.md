@@ -47,5 +47,12 @@ cd my-india
 3. **Open the website:**
 - Open index.html in your preferred browser.
 
+---
 
+##💡 Notes
 
+- Fully responsive design works on desktop, tablet, and mobile devices.
+- Navbar and footer are consistent across all pages using JavaScript for easy updates.
+- Ideal for showcasing India’s tourism, culture, and heritage online.
+
+---
