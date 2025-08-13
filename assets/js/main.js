@@ -14,15 +14,25 @@ window.addEventListener("DOMContentLoaded", () => {
             document.getElementById('navbar-container').innerHTML = data;
 
             // Highlight active nav-link (run after navbar is loaded)
-            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            // Highlight active nav-link (run after navbar is loaded)
+            let currentPath = window.location.pathname;
+
+            // Normalize: treat "/" as "index.html"
+            if (currentPath === "/" || currentPath === "") {
+                currentPath = "/index.html";
+            }
+
             const navLinks = document.querySelectorAll('#navbar-container .nav-link');
+
             navLinks.forEach(link => {
-                // Normalize href for comparison
-                let linkHref = link.getAttribute('href');
-                if (linkHref && linkHref.endsWith(currentPage)) {
+                let linkPath = link.getAttribute('href');
+
+                // Compare only path part (ignore domain)
+                if (linkPath === currentPath) {
                     link.classList.add('active');
                 }
             });
+
 
             // Init AOS again after navbar loads
             AOS.refresh();
@@ -37,5 +47,5 @@ window.addEventListener("DOMContentLoaded", () => {
         })
         .catch(err => console.error('Error loading footer:', err));
 
-    
+
 });
