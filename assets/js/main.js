@@ -13,25 +13,26 @@ window.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
 
-            // Highlight active nav-link (run after navbar is loaded)
-            // Highlight active nav-link (run after navbar is loaded)
+            // Get current path from URL
             let currentPath = window.location.pathname;
 
-            // Normalize: treat "/" as "index.html"
+            // Normalize: treat "/" or "" as "index.html"
             if (currentPath === "/" || currentPath === "") {
-                currentPath = "/index.html";
+                currentPath = "index.html";
+            } else {
+                currentPath = currentPath.split("/").pop(); // Only filename
             }
 
             const navLinks = document.querySelectorAll('#navbar-container .nav-link');
 
             navLinks.forEach(link => {
-                let linkPath = link.getAttribute('href');
+                let linkPath = link.getAttribute('href').split("/").pop(); // Only filename
 
-                // Compare only path part (ignore domain)
                 if (linkPath === currentPath) {
                     link.classList.add('active');
                 }
             });
+
 
 
             // Init AOS again after navbar loads
