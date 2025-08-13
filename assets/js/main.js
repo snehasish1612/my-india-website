@@ -16,22 +16,29 @@ window.addEventListener("DOMContentLoaded", () => {
             // Get current path from URL
             let currentPath = window.location.pathname;
 
-            // Normalize: treat "/" or "" as "index.html"
-            if (currentPath === "/" || currentPath === "") {
-                currentPath = "index.html";
-            } else {
-                currentPath = currentPath.split("/").pop(); // Only filename
+            // Remove trailing slash
+            if (currentPath.endsWith("/")) {
+                currentPath = currentPath.slice(0, -1);
             }
 
-            const navLinks = document.querySelectorAll('#navbar-container .nav-link');
+            // Treat "/" as "/index.html"
+            if (currentPath === "") {
+                currentPath = "/index.html";
+            }
 
-            navLinks.forEach(link => {
-                let linkPath = link.getAttribute('href').split("/").pop(); // Only filename
+            document.querySelectorAll('#navbar-container .nav-link').forEach(link => {
+                let linkPath = link.getAttribute('href');
+
+                // Normalize link path
+                if (linkPath === "/" || linkPath === "") {
+                    linkPath = "/index.html";
+                }
 
                 if (linkPath === currentPath) {
                     link.classList.add('active');
                 }
             });
+
 
 
 
