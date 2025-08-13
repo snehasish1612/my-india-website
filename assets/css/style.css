@@ -1,0 +1,909 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+
+/* Tricolor Gradient (Saffron to White to Green) */
+.tricolor-text {
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Ashoka Chakra Blue Gradient */
+.chakra-blue-text {
+  background: linear-gradient(to right, #87CEFA, #B0E0E6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #121212;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-link.active {
+  color: #FF9933 !important;
+  font-weight: 600;
+}
+
+/* Footer */
+footer a:hover {
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #FF9933;
+  text-decoration: none;
+}
+
+/* banner */
+.hero-banner {
+  background-image: url('/assets/images/homepage/homepage-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 45px;
+  left: 45px;
+  max-width: 600px;
+  padding: 1rem;
+  z-index: 10;
+}
+
+#home-intro .container {
+  overflow-x: hidden;
+}
+
+/* Why Explore India Section */
+
+#why-india h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#why-india .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #FF9933, #FFFFFF, #138808);
+}
+
+#why-india .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#why-india .card-title {
+  color: #0f52ba;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#why-india .card-text {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+#why-india .container {
+  overflow-x: hidden;
+}
+
+/* Explore India Categories Section */
+#explore-categories h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#explore-categories .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #121212;
+}
+
+#explore-categories .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#explore-categories .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#explore-categories .card-text {
+  font-size: 0.95rem;
+}
+
+#explore-categories .container {
+  overflow-x: hidden;
+}
+
+.tricolor-border {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1;
+}
+
+.homepage-snapshot .shadow-sm {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homepage-snapshot .shadow-sm:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+
+/* States Section */
+#states-categories h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#states-categories .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #121212;
+}
+
+#states-categories .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#states-categories .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#states-categories .card-text {
+  font-size: 0.95rem;
+}
+
+#states-categories {
+  overflow-x: hidden;
+}
+
+/*UTS Section*/
+#uts-categories h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#uts-categories .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #121212;
+}
+
+#uts-categories .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#uts-categories .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#uts-categories .card-text {
+  font-size: 0.95rem;
+}
+
+#uts-categories {
+  overflow-x: hidden;
+}
+
+/* Culture */
+/* Introductory Section */
+.culture-intro {
+  position: relative;
+  background: url('/assets/images/culture/culture-banner.jpg') center center/cover no-repeat;
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.culture-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.culture-intro p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Cultural Elements Section */
+#cultural-elements h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#cultural-elements .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #121212;
+}
+
+#cultural-elements .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#cultural-elements .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#cultural-elements .card-text {
+  font-size: 0.95rem;
+}
+
+#cultural-elements .container {
+  overflow-x: hidden;
+}
+
+/* Festivals Section */
+#indian-festivals h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#indian-festivals .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #121212;
+}
+
+#indian-festivals .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+
+#indian-festivals .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+#indian-festivals .card-text {
+  font-size: 0.95rem;
+}
+
+#indian-festivals .container {
+  overflow-x: hidden;
+}
+
+/*Languages Section*/
+#languages-of-india h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#languages-of-india img {
+  transition: transform 0.4s ease;
+}
+
+#languages-of-india img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#languages-of-india .container{
+  overflow-x: hidden;
+}
+
+/*Cultural Diversity Section*/
+#cultural-diversity h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Accordion dark theme */
+.accordion-item {
+  background-color: #181818;
+  border: 2px solid;
+  /* Thicker border for visibility */
+  border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.4s ease;
+}
+
+.accordion-item:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.accordion-button {
+  background-color: #181818;
+  color: #FF9933;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  box-shadow: none;
+  transition: background 0.3s;
+  justify-content: center;
+  /* Center button text */
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  color: greenyellow;
+  background-color: transparent;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion-body {
+  background-color: #181818;
+  /* color: #e0e0e0; */
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion-header {
+  border-radius: 10px 10px 0 0;
+  /* text-align: center; */
+  /* Center heading */
+}
+
+#cultural-diversity .accordian{
+  overflow-x: hidden;
+}
+
+
+/* Food Page */
+.food-intro {
+  position: relative;
+  background: url('/assets/images/food/food-banner.jpg') center center/cover no-repeat;
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.food-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.food-intro p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Regional Cuisine Section */
+#regional-cuisine h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#regional-cuisine .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  background-color: #121212;
+}
+#regional-cuisine .card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+#regional-cuisine .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+#regional-cuisine .card-text {
+  font-size: 0.95rem;
+}
+#regional-cuisine .container {
+  overflow-x: hidden;
+}
+#regional-cuisine .nav-link {
+  color: #ffffff; /* Change this to whatever color you want */
+}
+#regional-cuisine .nav-link:hover {
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+#regional-cuisine .nav-link.active {
+  color: #FF9933 !important;
+  background-color: transparent !important;
+  font-weight: 600;
+}
+
+/* State Food Blogs Section */
+#state-food-blogs {
+  background-color: #121212;
+  padding: 2rem 0;
+}
+#state-food-blogs h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#state-food-blogs .container{
+  overflow-x: hidden;
+}
+#state-food-blogs img {
+  transition: transform 0.4s ease;
+}
+#state-food-blogs img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/*Did You Know Section*/
+.did-you-know {
+  background-color: #121212;
+  padding: 2rem 0;
+}
+.did-you-know h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.did-you-know .fact-card {
+  transition: transform 0.3s ease;
+}
+.did-you-know .fact-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+/* History */
+/* Introductory Section */
+.history-intro {
+  position: relative;
+  background: url('/assets/images/history/history-banner.jpg') center center/cover no-repeat;
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.history-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.history-intro p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Timeline Section */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 900px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #ccc;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-img {
+  flex: 1;
+  padding: 10px;
+}
+
+.timeline-content {
+  flex: 1;
+  padding: 20px;
+  background: #121212;
+  border-radius: 10px;
+  box-shadow:
+    0 0 8px rgba(255, 153, 51, 0.25),
+    0 0 12px rgba(255, 255, 255, 0.15),
+    0 0 16px rgba(19, 136, 8, 0.25);
+
+  transition: transform 0.3s ease;
+}
+.timeline-item:hover .timeline-content {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.timeline-content h4 {
+  margin-bottom: 10px;
+}
+
+.history-timeline.container {
+  overflow-x: hidden;
+}
+
+/*Timelint to future*/
+.history-future {
+  padding: 3rem 0;
+}
+
+.history-future .hf-timeline-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.history-future .hf-timeline-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.history-future .hf-timeline-item {
+  min-width: 220px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.history-future .hf-timeline-item:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.history-future .hf-year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #FF9933;
+}
+
+.history-future .hf-future {
+  background: rgba(19, 136, 8, 0.15);
+  border: 2px dashed #138808;
+}
+
+/*Travel page */
+/* Introductory Section */
+.travel-intro {
+  position: relative;
+  background: url('/assets/images/travel/travel-banner.jpg') center center/cover no-repeat;
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.travel-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.travel-intro p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.popular-destinations .destination-card {
+  border-radius: 10px;
+  overflow: hidden;
+  /* background: #fff; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-destinations .destination-card:hover {
+  cursor: pointer;
+  transform: translateY(-8px);
+  /* box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); */
+}
+
+.popular-destinations img {
+  height: 250px;
+  object-fit: cover;
+}
+.popular-destinations .container {
+  overflow-x: hidden;
+}
+
+/* Travel by Region - same theme as Cultural Diversity */
+#travel-by-region h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#travel-by-region.container {
+  overflow-x: hidden;
+}
+
+/* Experiences Timeline */
+.experiences-india {
+  padding: 3rem 0;
+}
+
+.experiences-india .exp-timeline-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.experiences-india .exp-timeline-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.experiences-india .exp-timeline-item {
+  min-width: 240px;
+  /* background: #181818; */
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.experiences-india .exp-timeline-item:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.experiences-india .exp-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.experiences-india .exp-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #FF9933;
+}
+
+
+/* Did You Know Section */
+.dyk-card {
+  border-left: 5px solid #FF9933;
+  /* background: #181818; */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dyk-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  border-left-color: #138808;
+}
+
+
+/* Avout page */
+.about-intro {
+  position: relative;
+  background: url('/assets/images/about/about-banner.jpg') center center/cover no-repeat;
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.about-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.about-intro p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.why-site .shadow-sm, .india-snapshot .shadow-sm {
+    /* background: rgba(255,255,255,0.05); */
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.why-site .shadow-sm:hover, .india-snapshot .shadow-sm:hover {
+    /* border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1; */
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.about-intro .container {
+  overflow-x: hidden;
+}
+.why-site .container {
+  overflow-x: hidden;
+}
+.india-snapshot .container {
+  overflow-x: hidden;
+}
+.mission-statement .container{
+  overflow-x: hidden;
+}
+
+.credits-section .container {
+  overflow-x: hidden;
+}
+.back-to-home a{
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808); 
+  border: none; 
+  color: #000; 
+  font-weight: bold;
+  transition: all 0.3s ease;
+} 
+.back-to-home a:hover {
+  transform: scale(1.05);
+  color:#333;
+  /* font-weight: bold; */
+}
+
+/* Contact Page */
+.contact-intro .container {
+  overflow-x: hidden;
+}
+/* Hover effect for contact & social links */
+.contact-intro a:not(.back-to-home a) {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block; /* ensures transform works well */
+}
+
+.contact-intro a:not(.back-to-home a):hover {
+    transform: scale(1.1);
+}
+
+.state-details .container {
+  overflow-x: hidden;
+}
+.state-details h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  /* text-align: center; */
+  margin-bottom: 1.5rem;
+}
+.state-details .state-icon .p-3 {
+  transition: transform 0.3s ease;
+}
+
+.state-details .state-icon .p-3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.state-details .image-wrapper img {
+  transition: transform 0.3s ease;
+}
+.state-details .image-wrapper img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .timeline::before {
+    left: 20px;
+    transform: none;
+  }
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 35vh;
+  }
+
+  .banner-text {
+    left: 20px;
+    bottom: 10px;
+    padding: 0.5rem;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+
+  .culture-intro {
+    min-height: 35vh;
+  }
+
+  .culture-intro-banner-text {
+    left: 10px;
+    bottom: 10px;
+    padding: 0.5rem;
+    max-width: 95vw;
+    font-size: 1rem;
+  }
+
+  .culture-intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .culture-intro p {
+    font-size: 0.95rem;
+  }
+}

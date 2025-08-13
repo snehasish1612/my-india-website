@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My India | Culture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="../assets/images/icons/flag-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Food Introductory Section -->
+    <section class="food-intro text-center py-5">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="display-4 fw-bold chakra-blue-text mb-3 text-start">Flavours of India: A Culinary Journey</h1>
+            <p class="lead tricolor-text text-start" data-aos="zoom-in" data-aos-delay="200">
+                India's food is as diverse as its culture, with every region serving up unique flavors and traditions.
+                From spicy street food to royal feasts, vegetarian delights to coastal seafood, explore the rich and
+                colorful
+                tapestry of Indian cuisine that connects hearts through taste.
+            </p>
+        </div>
+    </section>
+
+    <!-- Regional Cuisine Section -->
+    <section class="regional-cuisine py-5" id="regional-cuisine">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center chakra-orange-text mb-4 chakra-blue-text">Regional Indian Cuisines</h2>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="cuisineTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="north-tab" data-bs-toggle="pill" data-bs-target="#north"
+                        type="button" role="tab" data-aos="zoom-in" data-aos-delay="100">North India</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="south-tab" data-bs-toggle="pill" data-bs-target="#south" type="button"
+                        role="tab" data-aos="zoom-in" data-aos-delay="200">South India</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="east-tab" data-bs-toggle="pill" data-bs-target="#east" type="button"
+                        role="tab" data-aos="zoom-in" data-aos-delay="300">East India</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="west-tab" data-bs-toggle="pill" data-bs-target="#west" type="button"
+                        role="tab" data-aos="zoom-in" data-aos-delay="400">West India</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="central-tab" data-bs-toggle="pill" data-bs-target="#central"
+                        type="button" role="tab" data-aos="zoom-in" data-aos-delay="500">Central India</button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="cuisineTabsContent" data-aos="fade-up" data-aos-duration="1000">
+
+                <!-- North India -->
+                <div class="tab-pane fade show active" id="north" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/butter-chicken.jpg" class="card-img-top"
+                                    alt="Butter Chicken">
+                                <div class="card-body" data-aos="zoom-in" data-aos-delay="100">
+                                    <h5 class="card-title chakra-blue-text">Butter Chicken</h5>
+                                    <p class="card-text tricolor-text">A rich, creamy chicken curry from Punjab with
+                                        buttery tomato
+                                        gravy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/rajma-chawal.jpg" class="card-img-top"
+                                    alt="Rajma Chawal">
+                                <div class="card-body" data-aos="zoom-in" data-aos-delay="200">
+                                    <h5 class="card-title chakra-blue-text">Rajma Chawal</h5>
+                                    <p class="card-text tricolor-text">Red kidney beans cooked in spices, served with
+                                        steamed rice. A
+                                        North Indian staple.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/chole-bhature.jpg" class="card-img-top"
+                                    alt="Chole Bhature">
+                                <div class="card-body" data-aos="zoom-in" data-aos-delay="300">
+                                    <h5 class="card-title chakra-blue-text">Chole Bhature</h5>
+                                    <p class="card-text tricolor-text">Spicy chickpeas served with deep-fried bread, a
+                                        popular dish
+                                        from
+                                        Punjab.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- South India -->
+                <div class="tab-pane fade" id="south" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/mashala-dosa.webp" class="card-img-top"
+                                    alt="Masala Dosa">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Masala Dosa</h5>
+                                    <p class="card-text tricolor-text">Crispy rice crepe filled with spiced potato mash,
+                                        served with
+                                        chutneys and sambar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/hydrabadi-biriyani.jpg" class="card-img-top"
+                                    alt="Hyderabadi Biryani">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Hyderabadi Biryani</h5>
+                                    <p class="card-text tricolor-text">Aromatic basmati rice layered with spiced meat,
+                                        slow-cooked in
+                                        traditional style.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/sambar.jpg" class="card-img-top" alt="Sambar">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Sambar</h5>
+                                    <p class="card-text tricolor-text">A tangy lentil soup with vegetables, a staple in
+                                        South Indian
+                                        meals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- East India -->
+                <div class="tab-pane fade" id="east" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/macher-jhol.jpeg" class="card-img-top"
+                                    alt="Macher Jhol">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Macher Jhol</h5>
+                                    <p class="card-text tricolor-text">Traditional Bengali fish curry with mustard oil
+                                        and spices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/momo.jpg" class="card-img-top" alt="Momos">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Momos</h5>
+                                    <p class="card-text tricolor-text">Tibetan-style steamed dumplings popular in
+                                        Eastern Himalayan
+                                        regions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/pakhala.jpeg" class="card-img-top" alt="Pakhala">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Pakhala</h5>
+                                    <p class="card-text tricolor-text">A traditional Odia dish of fermented rice served
+                                        with fried
+                                        vegetables and fish.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- West India -->
+                <div class="tab-pane fade" id="west" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/dhokla.jpg" class="card-img-top" alt="Dhokla">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Dhokla</h5>
+                                    <p class="card-text tricolor-text">A light, fluffy snack from Gujarat made from
+                                        fermented rice and
+                                        chickpea batter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/vada-pav.jpg" class="card-img-top" alt="Vada Pav">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Vada Pav</h5>
+                                    <p class="card-text tricolor-text">Mumbai’s favorite spicy potato fritter served
+                                        inside a pav with
+                                        chutneys.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/puran-poli.jpg" class="card-img-top" alt="Puran Poli">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Puran Poli</h5>
+                                    <p class="card-text tricolor-text">A sweet flatbread from Maharashtra stuffed with a
+                                        mixture of
+                                        jaggery and lentils.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Central India -->
+                <div class="tab-pane fade" id="central" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/poha-jalebi.jpg" class="card-img-top" alt="Poha Jalebi">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Poha & Jalebi</h5>
+                                    <p class="card-text tricolor-text">A popular breakfast combo in Madhya Pradesh with
+                                        sweet and
+                                        savory flavors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/seekh-kebab.jpg" class="card-img-top" alt="Seekh Kebab">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Seekh Kebab</h5>
+                                    <p class="card-text tricolor-text">Minced meat skewers grilled to perfection,
+                                        enjoyed across
+                                        Central Indian states.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="../assets/images/food/biryani.jpg" class="card-img-top" alt="Biryani">
+                                <div class="card-body">
+                                    <h5 class="card-title chakra-blue-text">Biryani</h5>
+                                    <p class="card-text tricolor-text">Aromatic rice dish with marinated meat, a beloved
+                                        dish in
+                                        Central India.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--State Food Blogs Section-->
+    <section class="state-food-blogs py-5" id="state-food-blogs">
+        <div class="container">
+            <h2 class="text-center chakra-blue-text mb-4" data-aos="fade-up">Taste of India – State by State</h2>
+            <p class="text-center lead tricolor-text mb-5" data-aos="zoom-in" data-aos-delay="100">
+                From the spice-laden streets of the South to the hearty platters of the North, every Indian state has
+                its own signature flavors and culinary traditions. This brief blog collection takes you on a delicious
+                journey across all 28 states, savoring the essence of their most iconic dishes.
+            </p>
+
+
+            <!-- 1. Andhra Pradesh -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/andhra-food.jpg" class="img-fluid rounded shadow"
+                        alt="Andhra Pradesh Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Andhra Pradesh</h3>
+                    <p class="tricolor-text">Spicy and tangy dishes dominate Andhra cuisine, with highlights like
+                        Gongura Pachadi, Pesarattu,
+                        and fiery Andhra biryani.</p>
+                </div>
+            </div>
+
+            <!-- 2. Arunachal Pradesh -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/arunachal-food.jpg" class="img-fluid rounded shadow"
+                        alt="Arunachal Pradesh Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Arunachal Pradesh</h3>
+                    <p class="tricolor-text">Known for bamboo shoot dishes, smoked meats, and momos, reflecting the
+                        influence of Tibet and
+                        Northeast flavors.</p>
+                </div>
+            </div>
+
+            <!-- 3. Assam -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/asam-food.jpg" class="img-fluid rounded shadow" alt="Assamese Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Assam</h3>
+                    <p class="tricolor-text">Light yet flavorful meals with fish curries, rice, and the signature Assam
+                        tea. Must-try: Masor
+                        Tenga (sour fish curry).</p>
+                </div>
+            </div>
+
+            <!-- 4. Bihar -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/bihar-food.jpg" class="img-fluid rounded shadow" alt="Bihari Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Bihar</h3>
+                    <p class="tricolor-text">Home to Litti Chokha, Thekua, and sattu-based delicacies, Bihari cuisine is
+                        hearty and rustic.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 5. Chhattisgarh -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/chhattisgarh-food.jpg" class="img-fluid rounded shadow"
+                        alt="Chhattisgarhi Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Chhattisgarh</h3>
+                    <p class="tricolor-text">Often called the 'Rice Bowl of India', famous for Chila, Faraa, and
+                        rice-based sweets.</p>
+                </div>
+            </div>
+
+            <!-- 6. Goa -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/goa-food.jpg" class="img-fluid rounded shadow" alt="Goan Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Goa</h3>
+                    <p class="tricolor-text">Seafood paradise with dishes like Goan Fish Curry, Vindaloo, and Bebinca.
+                        Coconut milk and spices
+                        define the flavor.</p>
+                </div>
+            </div>
+
+            <!-- 7. Gujarat -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/gujrat-food.jpg" class="img-fluid rounded shadow"
+                        alt="Gujarati Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Gujarat</h3>
+                    <p class="tricolor-text">Known for its sweet-spicy vegetarian delights like Dhokla, Thepla, and
+                        Undhiyu.</p>
+                </div>
+            </div>
+
+            <!-- 8. Haryana -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/haryana-food.jpg" class="img-fluid rounded shadow"
+                        alt="Haryanvi Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Haryana</h3>
+                    <p class="tricolor-text">Simple, rustic fare with Makki ki Roti, Bajra Khichdi, and lassi as
+                        staples.</p>
+                </div>
+            </div>
+
+            <!-- 9. Himachal Pradesh -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/himachal-food.jpg" class="img-fluid rounded shadow"
+                        alt="Himachali Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Himachal Pradesh</h3>
+                    <p class="tricolor-text">Famous for Dham (festive meal), Chha Gosht, and Siddu, reflecting the
+                        mountain flavors.</p>
+                </div>
+            </div>
+
+            <!-- 10. Jharkhand -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/jharkhand-food.jpg" class="img-fluid rounded shadow"
+                        alt="Jharkhand Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Jharkhand</h3>
+                    <p class="tricolor-text">Rice and meat-based dishes like Dhuska and Rugra, with flavors rooted in
+                        tribal traditions.</p>
+                </div>
+            </div>
+
+            <!-- 11. Karnataka -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/karnataka-food.jpg" class="img-fluid rounded shadow"
+                        alt="Karnataka Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Karnataka</h3>
+                    <p class="tricolor-text">From Bisi Bele Bath to Mysore Pak, Karnataka cuisine is diverse with
+                        coastal, northern, and
+                        southern influences.</p>
+                </div>
+            </div>
+
+            <!-- 12. Kerala -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/kerala-food.jpg" class="img-fluid rounded shadow" alt="Kerala Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Kerala</h3>
+                    <p class="tricolor-text">Banana leaf meals, Malabar Biryani, and coconut-rich curries define this
+                        tropical cuisine.</p>
+                </div>
+            </div>
+
+            <!-- 13. Madhya Pradesh -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/madhya-pradesh-food.jpg" class="img-fluid rounded shadow"
+                        alt="Madhya Pradesh Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Madhya Pradesh</h3>
+                    <p class="tricolor-text">Poha, Bhutte ka Kees, and kebabs reflect the central Indian taste palette.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 14. Maharashtra -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/maharashtra-food.jpg" class="img-fluid rounded shadow"
+                        alt="Maharashtrian Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Maharashtra</h3>
+                    <p class="tricolor-text">Pav Bhaji, Puran Poli, and Misal Pav showcase Maharashtra’s street food and
+                        festive flavors.</p>
+                </div>
+            </div>
+
+            <!-- 15. Manipur -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/manipur-food.jpg" class="img-fluid rounded shadow"
+                        alt="Manipuri Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Manipur</h3>
+                    <p class="tricolor-text">Healthy and aromatic dishes like Eromba and Chamthong are staples in
+                        Manipuri homes.</p>
+                </div>
+            </div>
+
+            <!-- 16. Meghalaya -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/meghalaya-food.jpg" class="img-fluid rounded shadow"
+                        alt="Meghalayan Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Meghalaya</h3>
+                    <p class="tricolor-text">Jadoh (red rice with pork) and Dohneiiong reflect the Khasi and Garo
+                        culinary traditions.</p>
+                </div>
+            </div>
+
+            <!-- 17. Mizoram -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/mizoram-food.jpg" class="img-fluid rounded shadow" alt="Mizo Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Mizoram</h3>
+                    <p class="tricolor-text">Lightly spiced meals with bamboo shoots, meats, and greens are a Mizo
+                        specialty.</p>
+                </div>
+            </div>
+
+            <!-- 18. Nagaland -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/nagaland-food.jpg" class="img-fluid rounded shadow" alt="Naga Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Nagaland</h3>
+                    <p class="tricolor-text">Smoked pork, axone (fermented soybean), and spicy chutneys define Naga
+                        flavors.</p>
+                </div>
+            </div>
+
+            <!-- 19. Odisha -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/odisha-food.jpg" class="img-fluid rounded shadow" alt="Odia Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Odisha</h3>
+                    <p class="tricolor-text">Pakhala Bhata, Dalma, and Chhena Poda are the heart of Odia cuisine.</p>
+                </div>
+            </div>
+
+            <!-- 20. Punjab -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/punjab-food.jpg" class="img-fluid rounded shadow"
+                        alt="Punjabi Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Punjab</h3>
+                    <p class="tricolor-text">Makki di Roti with Sarson da Saag and Butter Chicken define Punjab’s rich
+                        flavors.</p>
+                </div>
+            </div>
+
+            <!-- 21. Rajasthan -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/rajasthan-food.jpg" class="img-fluid rounded shadow"
+                        alt="Rajasthani Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Rajasthan</h3>
+                    <p class="tricolor-text">Daal Baati Churma, Gatte ki Sabzi, and Ker Sangri are desert state staples.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 22. Sikkim -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/sikkim-food.jpg" class="img-fluid rounded shadow"
+                        alt="Sikkimese Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Sikkim</h3>
+                    <p class="tricolor-text">Momos, Thukpa, and fermented foods show the Himalayan influence.</p>
+                </div>
+            </div>
+
+            <!-- 23. Tamil Nadu -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/tamil-nadu-food.jpg" class="img-fluid rounded shadow"
+                        alt="Tamil Nadu Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Tamil Nadu</h3>
+                    <p class="tricolor-text">Dosa, Idli, and Chettinad curries showcase the spice and variety of Tamil
+                        cuisine.</p>
+                </div>
+            </div>
+
+            <!-- 24. Telangana -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/telangana-food.jpg" class="img-fluid rounded shadow"
+                        alt="Telangana Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Telangana</h3>
+                    <p class="tricolor-text">Known for spicy dishes like Hyderabadi Biryani, Pachi Pulusu, and Gongura
+                        chutney.</p>
+                </div>
+            </div>
+
+            <!-- 25. Tripura -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/tripura-food.jpg" class="img-fluid rounded shadow"
+                        alt="Tripuri Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Tripura</h3>
+                    <p class="tricolor-text">Mui Borok (fermented fish) and rice dishes are central to Tripuri cuisine.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 26. Uttar Pradesh -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/uttar-pradesh-food.jpg" class="img-fluid rounded shadow"
+                        alt="UP Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Uttar Pradesh</h3>
+                    <p class="tricolor-text">From Awadhi kebabs to Bedai with aloo sabzi, UP’s food is royal and rustic
+                        at once.</p>
+                </div>
+            </div>
+
+            <!-- 27. Uttarakhand -->
+            <div class="row align-items-center mb-5" data-aos="fade-right">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/uttarakhand-food.jpg" class="img-fluid rounded shadow"
+                        alt="Uttarakhand Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">Uttarakhand</h3>
+                    <p class="tricolor-text">Simple mountain fare like Aloo Ke Gutke, Kafuli, and Jhangora Kheer.</p>
+                </div>
+            </div>
+
+            <!-- 28. West Bengal -->
+            <div class="row align-items-center mb-5 flex-md-row-reverse" data-aos="fade-left">
+                <div class="col-md-5">
+                    <img src="../assets/images/food/west-bengal-food.jpg" class="img-fluid rounded shadow"
+                        alt="Bengali Food">
+                </div>
+                <div class="col-md-7" data-aos="zoom-in" data-aos-delay="300">
+                    <h3 class="chakra-blue-text">West Bengal</h3>
+                    <p class="tricolor-text">From Shorshe Ilish to Rasgulla, Bengali food blends spice and sweetness
+                        beautifully.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Did You Know Section -->
+    <section class="did-you-know py-5">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-center fw-bold mb-4 chakra-blue-text">Did You Know?</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="fact-card p-4 shadow-sm h-100 text-center">
+                        <i class="bi bi-lightbulb-fill text-warning fs-1 mb-3"></i>
+                        <p class="tricolor-text">India is the <strong>largest producer of spices</strong> in the world, exporting to over 150
+                            countries.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+                    <div class="fact-card p-4 shadow-sm h-100 text-center">
+                        <i class="bi bi-lightbulb-fill text-warning fs-1 mb-3"></i>
+                        <p class="tricolor-text"><strong>Biryani</strong> has more than 50 regional variations, each with its own unique
+                            flavor profile.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="500">
+                    <div class="fact-card p-4 shadow-sm h-100 text-center">
+                        <i class="bi bi-lightbulb-fill text-warning fs-1 mb-3"></i>
+                        <p class="tricolor-text">India’s street food culture is so diverse that <strong>every state</strong> has its own
+                            iconic snacks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
